@@ -1,6 +1,6 @@
 # PETCORP Office Globe
 
-Interactive 3D globe built with Three.js that displays office locations as glowing markers on a rotating Earth. Designed for embedding in a Squarespace CDK interactive block via iframe.
+Interactive 3D globe built with Three.js that displays office locations as glowing markers on a rotating Earth.
 
 ## Quick Start
 
@@ -46,13 +46,6 @@ Pass `?data=https://example.com/offices.json` to load a custom dataset. The JSON
 ```
 
 Set one location's `type` to `"headquarters"` for the HQ marker style and arc origin.
-
-## CDK Integration
-
-The globe sends `postMessage` events to the parent window:
-
-- `{ type: 'EXPERIENCE_READY' }` — globe is loaded and rendering
-- `{ type: 'MARKER_CLICKED', data: { name, city, country } }` — user clicked a marker
 
 ## Tech
 
